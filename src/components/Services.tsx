@@ -96,11 +96,11 @@ export function Services() {
         <FadeUp className="text-center max-w-3xl mx-auto">
           <h2
             id="services-heading"
-            className="text-3xl sm:text-4xl font-bold text-navy font-display tracking-tight"
+            className="text-3xl sm:text-4xl font-bold text-white font-display tracking-tight"
           >
             Comprehensive Technology Services
           </h2>
-          <p className="mt-4 text-lg text-slate-600 leading-relaxed">
+          <p className="mt-4 text-lg text-zinc-400 leading-relaxed">
             From initial concept to production deployment, we provide the
             engineering expertise your business needs to build, launch, and
             scale digital products.
@@ -110,14 +110,14 @@ export function Services() {
         <StaggerContainer className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
             <StaggerItem key={service.title}>
-              <div className="group relative bg-white rounded-2xl p-6 ring-1 ring-slate-200/60 hover:shadow-lg hover:ring-accent/20 transition-all duration-300 h-full flex flex-col">
-                <div className="inline-flex items-center justify-center h-11 w-11 rounded-lg bg-accent-light/60 text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+              <div className="group relative bg-[#18181B] rounded-2xl p-6 ring-1 ring-zinc-800/60 hover:shadow-lg hover:shadow-accent/5 hover:ring-accent/30 transition-all duration-300 h-full flex flex-col">
+                <div className="inline-flex items-center justify-center h-11 w-11 rounded-lg bg-accent/10 text-accent group-hover:bg-accent group-hover:text-[#09090B] transition-colors duration-300">
                   {service.icon}
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-navy font-display">
+                <h3 className="mt-4 text-base font-semibold text-white font-display">
                   {service.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600 flex-1">
+                <p className="mt-2 text-sm leading-relaxed text-zinc-400 flex-1">
                   {service.description}
                 </p>
               </div>

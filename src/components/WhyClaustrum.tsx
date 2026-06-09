@@ -77,11 +77,11 @@ export function WhyClaustrum() {
         <FadeUp className="text-center max-w-3xl mx-auto">
           <h2
             id="why-heading"
-            className="text-3xl sm:text-4xl font-bold text-navy font-display tracking-tight"
+            className="text-3xl sm:text-4xl font-bold text-white font-display tracking-tight"
           >
             Why Claustrum
           </h2>
-          <p className="mt-4 text-lg text-slate-600 leading-relaxed">
+          <p className="mt-4 text-lg text-zinc-400 leading-relaxed">
             We combine deep engineering expertise with a pragmatic approach to
             technology — delivering solutions that work in the real world, not
             just in demos.
@@ -91,14 +91,14 @@ export function WhyClaustrum() {
         <StaggerContainer className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {differentiators.map((item) => (
             <StaggerItem key={item.title}>
-              <div className="relative bg-white rounded-2xl p-8 ring-1 ring-slate-200/60 hover:shadow-md hover:ring-accent/20 transition-all duration-300 h-full">
-                <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-accent-light/60 text-accent">
+              <div className="relative bg-[#18181B] rounded-2xl p-8 ring-1 ring-zinc-800/60 hover:shadow-lg hover:shadow-accent/5 hover:ring-accent/30 transition-all duration-300 h-full">
+                <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-accent/10 text-accent">
                   {item.icon}
                 </div>
-                <h3 className="mt-5 text-lg font-semibold text-navy font-display">
+                <h3 className="mt-5 text-lg font-semibold text-white font-display">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                <p className="mt-3 text-sm leading-relaxed text-zinc-400">
                   {item.description}
                 </p>
               </div>

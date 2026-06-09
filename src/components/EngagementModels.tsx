@@ -64,11 +64,11 @@ export function EngagementModels() {
         <FadeUp className="text-center max-w-3xl mx-auto">
           <h2
             id="engagement-heading"
-            className="text-3xl sm:text-4xl font-bold text-navy font-display tracking-tight"
+            className="text-3xl sm:text-4xl font-bold text-white font-display tracking-tight"
           >
             Flexible Engagement Models
           </h2>
-          <p className="mt-4 text-lg text-slate-600 leading-relaxed">
+          <p className="mt-4 text-lg text-zinc-400 leading-relaxed">
             Choose the partnership model that fits your project requirements,
             timeline, and organizational needs.
           </p>
@@ -77,21 +77,21 @@ export function EngagementModels() {
         <StaggerContainer className="mt-16 grid lg:grid-cols-3 gap-8">
           {models.map((model) => (
             <StaggerItem key={model.title}>
-              <div className="group relative bg-white rounded-2xl p-8 ring-1 ring-slate-200/60 hover:shadow-lg hover:ring-accent/20 transition-all duration-300 h-full flex flex-col">
-                <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-accent-light/60 text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+              <div className="group relative bg-[#18181B] rounded-2xl p-8 ring-1 ring-zinc-800/60 hover:shadow-lg hover:shadow-accent/5 hover:ring-accent/30 transition-all duration-300 h-full flex flex-col">
+                <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-[#09090B] transition-colors duration-300">
                   {model.icon}
                 </div>
-                <h3 className="mt-5 text-xl font-semibold text-navy font-display">
+                <h3 className="mt-5 text-xl font-semibold text-white font-display">
                   {model.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-600 flex-1">
+                <p className="mt-3 text-sm leading-relaxed text-zinc-400 flex-1">
                   {model.description}
                 </p>
                 <ul className="mt-6 space-y-2.5" role="list">
                   {model.features.map((feature) => (
                     <li
                       key={feature}
-                      className="flex items-center gap-2.5 text-sm text-slate-700"
+                      className="flex items-center gap-2.5 text-sm text-zinc-300"
                     >
                       <svg
                         className="h-4 w-4 text-accent flex-shrink-0"

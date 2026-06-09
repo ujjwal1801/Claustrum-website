@@ -14,11 +14,11 @@ export function Hero() {
       aria-label="Introduction"
     >
       <div
-        className="absolute inset-0 bg-gradient-to-br from-white via-white to-blue-50/40"
+        className="absolute inset-0 bg-gradient-to-br from-[#09090B] via-[#09090B] to-[#0A1A2A]"
         aria-hidden="true"
       />
       <div
-        className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-50/30 to-transparent"
+        className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-cyan-950/10 to-transparent"
         aria-hidden="true"
       />
 
@@ -33,13 +33,13 @@ export function Hero() {
                 ease: [0.21, 0.47, 0.32, 0.98],
               }}
             >
-              <span className="inline-flex items-center rounded-full bg-accent-light/60 px-4 py-1.5 text-sm font-medium text-accent ring-1 ring-accent/10">
+              <span className="inline-flex items-center rounded-full bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent ring-1 ring-accent/20">
                 Software Engineering &amp; AI Solutions
               </span>
             </motion.div>
 
             <motion.h1
-              className="mt-8 text-4xl sm:text-5xl lg:text-[3.5rem] font-bold tracking-tight text-navy font-display leading-[1.1]"
+              className="mt-8 text-4xl sm:text-5xl lg:text-[3.5rem] font-bold tracking-tight text-white font-display leading-[1.1]"
               initial={animate ? { opacity: 0, y: 20 } : {}}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -52,7 +52,7 @@ export function Hero() {
             </motion.h1>
 
             <motion.p
-              className="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-xl"
+              className="mt-6 text-lg sm:text-xl text-zinc-400 leading-relaxed max-w-xl"
               initial={animate ? { opacity: 0, y: 20 } : {}}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -77,7 +77,7 @@ export function Hero() {
             >
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-accent-hover transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                className="inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-[#09090B] shadow-[0_0_20px_rgba(54,158,234,0.25)] hover:bg-accent-hover hover:shadow-[0_0_30px_rgba(54,158,234,0.35)] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#09090B]"
               >
                 Schedule a Consultation
                 <svg
@@ -97,7 +97,7 @@ export function Hero() {
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center justify-center rounded-lg border border-slate-200 px-6 py-3.5 text-base font-semibold text-navy hover:bg-surface transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                className="inline-flex items-center justify-center rounded-lg border border-zinc-800 px-6 py-3.5 text-base font-semibold text-zinc-200 hover:bg-zinc-800/50 hover:border-zinc-700 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#09090B]"
               >
                 View Services
               </a>

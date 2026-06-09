@@ -58,11 +58,11 @@ export function Process() {
         <FadeUp className="text-center max-w-3xl mx-auto">
           <h2
             id="process-heading"
-            className="text-3xl sm:text-4xl font-bold text-navy font-display tracking-tight"
+            className="text-3xl sm:text-4xl font-bold text-white font-display tracking-tight"
           >
             Our Engineering Process
           </h2>
-          <p className="mt-4 text-lg text-slate-600 leading-relaxed">
+          <p className="mt-4 text-lg text-zinc-400 leading-relaxed">
             A proven methodology that transforms complex requirements into
             reliable, production-grade software — with transparency at every
             stage.
@@ -71,7 +71,7 @@ export function Process() {
 
         <div className="mt-16 relative">
           <div
-            className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-slate-200"
+            className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-zinc-800"
             aria-hidden="true"
           />
 
@@ -86,7 +86,7 @@ export function Process() {
                     }`}
                   >
                     <div
-                      className="hidden lg:flex absolute left-1/2 -translate-x-1/2 h-10 w-10 items-center justify-center rounded-full bg-accent text-white text-sm font-bold font-display z-10 ring-4 ring-white"
+                      className="hidden lg:flex absolute left-1/2 -translate-x-1/2 h-10 w-10 items-center justify-center rounded-full bg-accent text-[#09090B] text-sm font-bold font-display z-10 ring-4 ring-[#0F0F13] shadow-[0_0_12px_rgba(54,158,234,0.3)]"
                       aria-hidden="true"
                     >
                       {step.number}
@@ -99,19 +99,19 @@ export function Process() {
                           : "lg:col-start-2 lg:pl-16"
                       }`}
                     >
-                      <div className="bg-white rounded-2xl p-6 ring-1 ring-slate-200/60">
+                      <div className="bg-[#18181B] rounded-2xl p-6 ring-1 ring-zinc-800/60">
                         <div className="flex items-center gap-3 lg:hidden mb-3">
-                          <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-accent text-white text-xs font-bold font-display">
+                          <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-accent text-[#09090B] text-xs font-bold font-display">
                             {step.number}
                           </span>
-                          <h3 className="text-lg font-semibold text-navy font-display">
+                          <h3 className="text-lg font-semibold text-white font-display">
                             {step.title}
                           </h3>
                         </div>
-                        <h3 className="hidden lg:block text-lg font-semibold text-navy font-display">
+                        <h3 className="hidden lg:block text-lg font-semibold text-white font-display">
                           {step.title}
                         </h3>
-                        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                        <p className="mt-2 text-sm leading-relaxed text-zinc-400">
                           {step.description}
                         </p>
                       </div>

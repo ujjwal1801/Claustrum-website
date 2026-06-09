@@ -70,11 +70,11 @@ export function Technologies() {
         <FadeUp className="text-center max-w-3xl mx-auto">
           <h2
             id="tech-heading"
-            className="text-3xl sm:text-4xl font-bold text-navy font-display tracking-tight"
+            className="text-3xl sm:text-4xl font-bold text-white font-display tracking-tight"
           >
             Technologies We Work With
           </h2>
-          <p className="mt-4 text-lg text-slate-600 leading-relaxed">
+          <p className="mt-4 text-lg text-zinc-400 leading-relaxed">
             We choose the right tool for the job — not the trendiest. Our
             technology choices are driven by your requirements, team
             capabilities, and long-term maintainability.
@@ -84,7 +84,7 @@ export function Technologies() {
         <StaggerContainer className="mt-16 grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {categories.map((category) => (
             <StaggerItem key={category.title}>
-              <div className="bg-white rounded-2xl p-6 ring-1 ring-slate-200/60 h-full">
+              <div className="bg-[#18181B] rounded-2xl p-6 ring-1 ring-zinc-800/60 h-full">
                 <h3 className="text-sm font-semibold text-accent uppercase tracking-wider font-display">
                   {category.title}
                 </h3>
@@ -92,10 +92,10 @@ export function Technologies() {
                   {category.items.map((item) => (
                     <li
                       key={item.name}
-                      className="flex items-center gap-2.5 text-sm text-slate-700"
+                      className="flex items-center gap-2.5 text-sm text-zinc-300"
                     >
                       <span
-                        className="h-1.5 w-1.5 rounded-full bg-accent/40 flex-shrink-0"
+                        className="h-1.5 w-1.5 rounded-full bg-accent/60 flex-shrink-0"
                         aria-hidden="true"
                       />
                       {item.name}

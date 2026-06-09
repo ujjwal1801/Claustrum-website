@@ -5,15 +5,15 @@ import { FadeUp } from "./AnimationWrapper";
 export function CTASection() {
   return (
     <section
-      className="relative py-24 lg:py-32 bg-navy overflow-hidden"
+      className="relative py-24 lg:py-32 bg-[#06060A] overflow-hidden"
       aria-labelledby="cta-heading"
     >
       <div
-        className="absolute inset-0 bg-gradient-to-br from-navy via-charcoal to-navy"
+        className="absolute inset-0 bg-gradient-to-br from-[#06060A] via-[#0A1628] to-[#06060A]"
         aria-hidden="true"
       />
       <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-accent/5 rounded-full blur-3xl"
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-accent/[0.03] rounded-full blur-3xl"
         aria-hidden="true"
       />
 
@@ -25,7 +25,7 @@ export function CTASection() {
           >
             Ready to Build Something Exceptional?
           </h2>
-          <p className="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+          <p className="mt-6 text-lg sm:text-xl text-zinc-400 leading-relaxed max-w-2xl mx-auto">
             Let&apos;s discuss your next product, platform, or AI initiative.
             Our team is ready to help you turn ambitious ideas into
             production-grade software.
@@ -33,7 +33,7 @@ export function CTASection() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-accent px-8 py-4 text-base font-semibold text-white shadow-lg hover:bg-accent-hover transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
+              className="inline-flex items-center justify-center rounded-lg bg-accent px-8 py-4 text-base font-semibold text-[#09090B] shadow-[0_0_24px_rgba(54,158,234,0.3)] hover:bg-accent-hover hover:shadow-[0_0_32px_rgba(54,158,234,0.4)] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#06060A]"
             >
               Schedule a Consultation
               <svg

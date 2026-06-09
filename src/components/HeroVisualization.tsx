@@ -37,12 +37,12 @@ export function HeroVisualization() {
       >
         <defs>
           <radialGradient id="heroNodeGlow" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.25" />
-            <stop offset="100%" stopColor="#3B82F6" stopOpacity="0" />
+            <stop offset="0%" stopColor="#369EEA" stopOpacity="0.2" />
+            <stop offset="100%" stopColor="#369EEA" stopOpacity="0" />
           </radialGradient>
           <radialGradient id="heroCenterGlow" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#2563EB" stopOpacity="0.12" />
-            <stop offset="100%" stopColor="#2563EB" stopOpacity="0" />
+            <stop offset="0%" stopColor="#369EEA" stopOpacity="0.08" />
+            <stop offset="100%" stopColor="#369EEA" stopOpacity="0" />
           </radialGradient>
         </defs>
 
@@ -63,8 +63,8 @@ export function HeroVisualization() {
             y1={nodes[from].cy}
             x2={nodes[to].cx}
             y2={nodes[to].cy}
-            stroke="#2563EB"
-            strokeOpacity="0.15"
+            stroke="#369EEA"
+            strokeOpacity="0.12"
             strokeWidth="1"
             initial={{ pathLength: 0, opacity: 0 }}
             animate={{ pathLength: 1, opacity: 1 }}
@@ -98,7 +98,7 @@ export function HeroVisualization() {
             cx={node.cx}
             cy={node.cy}
             r={node.r}
-            fill={i === 6 ? "#2563EB" : "#3B82F6"}
+            fill={i === 6 ? "#369EEA" : "#2B7FBE"}
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -116,7 +116,7 @@ export function HeroVisualization() {
               cy={170}
               r={9}
               fill="none"
-              stroke="#2563EB"
+              stroke="#369EEA"
               strokeWidth="1"
               animate={{ opacity: [0.5, 0], scale: [1, 3] }}
               transition={{ duration: 2.5, repeat: Infinity, ease: "easeOut" }}
@@ -126,7 +126,7 @@ export function HeroVisualization() {
               cy={170}
               r={9}
               fill="none"
-              stroke="#2563EB"
+              stroke="#369EEA"
               strokeWidth="0.5"
               animate={{ opacity: [0.3, 0], scale: [1, 4] }}
               transition={{
@@ -138,7 +138,7 @@ export function HeroVisualization() {
             />
             <motion.circle
               r={2.5}
-              fill="#60A5FA"
+              fill="#5BB2F0"
               animate={{
                 cx: [200, 340, 420, 280, 160, 200],
                 cy: [120, 80, 200, 260, 220, 120],
@@ -148,7 +148,7 @@ export function HeroVisualization() {
             />
             <motion.circle
               r={2}
-              fill="#93C5FD"
+              fill="#8ECAF5"
               animate={{
                 cx: [380, 260, 100, 320, 480, 380],
                 cy: [320, 170, 300, 360, 280, 320],

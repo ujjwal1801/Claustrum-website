@@ -23,7 +23,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-navy" role="contentinfo">
+    <footer className="bg-[#06060A]" role="contentinfo">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           <div className="lg:col-span-1">
@@ -41,7 +41,7 @@ export function Footer() {
                 Claustrum
               </span>
             </Link>
-            <p className="mt-4 text-sm text-slate-400 leading-relaxed max-w-xs">
+            <p className="mt-4 text-sm text-zinc-500 leading-relaxed max-w-xs">
               Claustrum Technologies helps businesses design, build, modernize,
               and scale digital products through engineering excellence.
             </p>
@@ -56,7 +56,7 @@ export function Footer() {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-sm text-slate-400 hover:text-white transition-colors"
+                    className="text-sm text-zinc-500 hover:text-accent transition-colors"
                   >
                     {item.name}
                   </a>
@@ -74,7 +74,7 @@ export function Footer() {
                 <li key={service}>
                   <a
                     href="#services"
-                    className="text-sm text-slate-400 hover:text-white transition-colors"
+                    className="text-sm text-zinc-500 hover:text-accent transition-colors"
                   >
                     {service}
                   </a>
@@ -91,18 +91,18 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:hello@claustrum.tech"
-                  className="text-sm text-slate-400 hover:text-white transition-colors"
+                  className="text-sm text-zinc-500 hover:text-accent transition-colors"
                 >
                   hello@claustrum.tech
                 </a>
               </li>
-              <li className="text-sm text-slate-400">India</li>
+              <li className="text-sm text-zinc-500">India</li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-slate-800">
-          <p className="text-sm text-slate-500 text-center">
+        <div className="mt-16 pt-8 border-t border-zinc-800">
+          <p className="text-sm text-zinc-600 text-center">
             &copy; {currentYear} Claustrum Technologies Private Limited. All
             rights reserved.
           </p>

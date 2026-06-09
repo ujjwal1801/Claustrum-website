@@ -26,7 +26,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/90 backdrop-blur-lg border-b border-slate-200/60 shadow-sm"
+          ? "bg-[#09090B]/80 backdrop-blur-lg border-b border-zinc-800/50"
           : "bg-transparent"
       }`}
       role="banner"
@@ -46,7 +46,7 @@ export function Header() {
                 C
               </span>
             </div>
-            <span className="text-lg font-semibold text-navy font-display tracking-tight">
+            <span className="text-lg font-semibold text-white font-display tracking-tight">
               Claustrum
             </span>
           </Link>
@@ -56,7 +56,7 @@ export function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-slate-600 hover:text-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded-sm"
+                className="text-sm font-medium text-zinc-400 hover:text-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#09090B] rounded-sm"
               >
                 {item.name}
               </a>
@@ -66,7 +66,7 @@ export function Header() {
           <div className="hidden lg:flex lg:items-center">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-white hover:bg-accent-hover transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-[#09090B] hover:bg-accent-hover transition-colors shadow-[0_0_12px_rgba(54,158,234,0.2)] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#09090B]"
             >
               Schedule a Consultation
             </a>
@@ -74,7 +74,7 @@ export function Header() {
 
           <button
             type="button"
-            className="lg:hidden inline-flex items-center justify-center rounded-md p-2 text-navy hover:bg-surface transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="lg:hidden inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-zinc-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-expanded={mobileMenuOpen}
             aria-label="Toggle navigation menu"
@@ -111,7 +111,7 @@ export function Header() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
-              className="lg:hidden overflow-hidden bg-white/95 backdrop-blur-lg rounded-b-xl"
+              className="lg:hidden overflow-hidden bg-[#111113]/95 backdrop-blur-lg rounded-b-xl border-b border-zinc-800/50"
             >
               <div className="pb-4 pt-2 space-y-1">
                 {navigation.map((item) => (
@@ -119,7 +119,7 @@ export function Header() {
                     key={item.name}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block rounded-lg px-3 py-2.5 text-base font-medium text-navy hover:bg-surface transition-colors"
+                    className="block rounded-lg px-3 py-2.5 text-base font-medium text-zinc-200 hover:bg-zinc-800 transition-colors"
                   >
                     {item.name}
                   </a>
@@ -128,7 +128,7 @@ export function Header() {
                   <a
                     href="#contact"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block rounded-lg bg-accent px-4 py-2.5 text-base font-medium text-white text-center"
+                    className="block rounded-lg bg-accent px-4 py-2.5 text-base font-medium text-[#09090B] text-center"
                   >
                     Schedule a Consultation
                   </a>

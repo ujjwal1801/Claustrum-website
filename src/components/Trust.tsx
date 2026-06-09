@@ -101,11 +101,11 @@ export function Trust() {
         <FadeUp className="text-center max-w-3xl mx-auto">
           <h2
             id="trust-heading"
-            className="text-3xl sm:text-4xl font-bold text-navy font-display tracking-tight"
+            className="text-3xl sm:text-4xl font-bold text-white font-display tracking-tight"
           >
             Trusted Engineering for Modern Businesses
           </h2>
-          <p className="mt-4 text-lg text-slate-600 leading-relaxed">
+          <p className="mt-4 text-lg text-zinc-400 leading-relaxed">
             We bring deep technical expertise across the full stack — from
             modern frontend frameworks and scalable backend systems to cloud
             infrastructure and applied AI.
@@ -115,14 +115,14 @@ export function Trust() {
         <StaggerContainer className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {capabilities.map((cap) => (
             <StaggerItem key={cap.title}>
-              <div className="group relative bg-white rounded-2xl p-8 shadow-sm ring-1 ring-slate-200/60 hover:shadow-md hover:ring-accent/20 transition-all duration-300 h-full">
-                <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-accent-light/60 text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+              <div className="group relative bg-[#18181B] rounded-2xl p-8 ring-1 ring-zinc-800/60 hover:shadow-lg hover:shadow-accent/5 hover:ring-accent/30 transition-all duration-300 h-full">
+                <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-[#09090B] transition-colors duration-300">
                   {cap.icon}
                 </div>
-                <h3 className="mt-5 text-lg font-semibold text-navy font-display">
+                <h3 className="mt-5 text-lg font-semibold text-white font-display">
                   {cap.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                <p className="mt-2 text-sm leading-relaxed text-zinc-400">
                   {cap.description}
                 </p>
               </div>
