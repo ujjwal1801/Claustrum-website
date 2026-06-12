@@ -8,7 +8,6 @@ const navigation = [
   { name: "Services", href: "#services" },
   { name: "Process", href: "#process" },
   { name: "Why Us", href: "#why-claustrum" },
-  { name: "Technologies", href: "#technologies" },
   { name: "Contact", href: "#contact" },
 ];
 

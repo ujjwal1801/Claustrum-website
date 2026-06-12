@@ -15,7 +15,6 @@ const navigation = [
   { name: "Services", href: "#services" },
   { name: "Process", href: "#process" },
   { name: "Why Us", href: "#why-claustrum" },
-  { name: "Technologies", href: "#technologies" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -90,10 +89,10 @@ export function Footer() {
             <ul className="mt-4 space-y-3" role="list">
               <li>
                 <a
-                  href="mailto:hello@claustrum.tech"
+                  href="mailto:contact@claustrum-tech.com"
                   className="text-sm text-zinc-500 hover:text-accent transition-colors"
                 >
-                  hello@claustrum.tech
+                  contact@claustrum-tech.com
                 </a>
               </li>
               <li className="text-sm text-zinc-500">India</li>

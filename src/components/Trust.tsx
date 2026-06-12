@@ -7,7 +7,7 @@ const capabilities = [
   {
     title: "Modern Tech Stack",
     description:
-      "We leverage the latest frameworks and tools — from Next.js and React to Django and Node.js — delivering solutions that are fast, maintainable, and future-proof.",
+      "We leverage the latest frameworks and tools — selecting the best fit for each project — delivering solutions that are fast, maintainable, and future-proof.",
     icon: (
       <svg
         className="h-6 w-6"
@@ -28,7 +28,7 @@ const capabilities = [
   {
     title: "Cloud Expertise",
     description:
-      "From AWS architecture and Kubernetes orchestration to CI/CD pipelines, we build and manage cloud infrastructure that scales elastically with demand.",
+      "From cloud architecture and container orchestration to CI/CD pipelines, we build and manage infrastructure that scales elastically with demand.",
     icon: (
       <svg
         className="h-6 w-6"

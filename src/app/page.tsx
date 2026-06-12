@@ -4,7 +4,6 @@ import { Trust } from "@/components/Trust";
 import { Services } from "@/components/Services";
 import { Process } from "@/components/Process";
 import { WhyClaustrum } from "@/components/WhyClaustrum";
-import { Technologies } from "@/components/Technologies";
 import { EngagementModels } from "@/components/EngagementModels";
 import { CTASection } from "@/components/CTASection";
 import { Contact } from "@/components/Contact";
@@ -20,7 +19,6 @@ export default function Home() {
         <Services />
         <Process />
         <WhyClaustrum />
-        <Technologies />
         <EngagementModels />
         <CTASection />
         <Contact />

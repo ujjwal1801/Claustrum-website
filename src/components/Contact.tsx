@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FadeUp } from "./AnimationWrapper";
+import { sendContactEmail } from "@/app/actions/contact";
 
 interface FormData {
   name: string;
@@ -41,6 +42,7 @@ export function Contact() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -54,15 +56,20 @@ export function Contact() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    setServerError(null);
     const validationErrors = validate(formData);
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
     setSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const result = await sendContactEmail(formData);
     setSubmitting(false);
-    setSubmitted(true);
+    if (result.success) {
+      setSubmitted(true);
+    } else {
+      setServerError(result.error || "Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -95,10 +102,10 @@ export function Contact() {
                 <div>
                   <p className="text-sm font-semibold text-white">Email</p>
                   <a
-                    href="mailto:hello@claustrum.tech"
+                    href="mailto:contact@claustrum-tech.com"
                     className="text-sm text-zinc-400 hover:text-accent transition-colors"
                   >
-                    hello@claustrum.tech
+                    contact@claustrum-tech.com
                   </a>
                 </div>
               </div>
@@ -291,6 +298,12 @@ export function Contact() {
                       </p>
                     )}
                   </div>
+
+                  {serverError && (
+                    <p className="text-sm text-red-400 bg-red-500/10 rounded-lg px-4 py-3" role="alert">
+                      {serverError}
+                    </p>
+                  )}
 
                   <button
                     type="submit"

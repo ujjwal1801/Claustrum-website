@@ -86,7 +86,7 @@ const jsonLd = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "sales",
-    email: "hello@claustrum.tech",
+    email: "contact@claustrum-tech.com",
   },
   offers: {
     "@type": "AggregateOffer",
@@ -107,7 +107,7 @@ const jsonLd = {
         "@type": "Service",
         name: "Cloud & DevOps",
         description:
-          "AWS architecture, infrastructure automation, CI/CD, and cloud optimization.",
+          "Cloud architecture, infrastructure automation, CI/CD, and cost optimization.",
       },
       {
         "@type": "Service",
