@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/assets/claustrum-logo-mark.png";
 
 const services = [
   "Custom Software Development",
@@ -28,17 +30,14 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link
               href="/"
-              className="inline-flex items-center gap-2"
+              className="inline-flex items-center"
               aria-label="Claustrum Technologies Home"
             >
-              <div className="h-8 w-8 rounded-lg bg-accent flex items-center justify-center">
-                <span className="text-white font-bold text-sm font-display">
-                  C
-                </span>
-              </div>
-              <span className="text-lg font-semibold text-white font-display tracking-tight">
-                Claustrum
-              </span>
+              <Image
+                src={logo}
+                alt="Claustrum Technologies"
+                className="h-11 w-auto"
+              />
             </Link>
             <p className="mt-4 text-sm text-zinc-500 leading-relaxed max-w-xs">
               Claustrum Technologies helps businesses design, build, modernize,

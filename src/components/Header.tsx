@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/assets/claustrum-logo-mark.png";
 
 const navigation = [
   { name: "Services", href: "#services" },
@@ -37,17 +39,15 @@ export function Header() {
         <div className="flex h-16 items-center justify-between lg:h-20">
           <Link
             href="/"
-            className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded-lg"
+            className="flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#09090B] rounded-lg"
             aria-label="Claustrum Technologies Home"
           >
-            <div className="h-8 w-8 rounded-lg bg-accent flex items-center justify-center">
-              <span className="text-white font-bold text-sm font-display">
-                C
-              </span>
-            </div>
-            <span className="text-lg font-semibold text-white font-display tracking-tight">
-              Claustrum
-            </span>
+            <Image
+              src={logo}
+              alt="Claustrum Technologies"
+              priority
+              className="h-11 w-auto lg:h-14"
+            />
           </Link>
 
           <div className="hidden lg:flex lg:items-center lg:gap-8">
