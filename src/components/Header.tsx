@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/assets/claustrum-logo-mark.png";
+import logo from "@/assets/claustrum-logo-wordmark.png";
 
 const navigation = [
   { name: "Services", href: "#services" },

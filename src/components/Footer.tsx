@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/assets/claustrum-logo-mark.png";
+import logo from "@/assets/claustrum-logo-wordmark.png";
 
 const services = [
   "Custom Software Development",
